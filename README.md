@@ -14,6 +14,10 @@ This is a Python GUI application built using Tkinter that displays guitar chords
 - Python 3.x
 - Tkinter library (usually included with Python)
 
+## Screenshot
+
+![ScreenShot](screenshot.png)
+
 ## Installation
 
 1. Clone the repository:
