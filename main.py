@@ -11,7 +11,7 @@ class GuitarChordApp:
         self.root.configure(bg="#f0f0f0")
 
         self.chord_sets = {
-            "Basic": ["A", "C", "D", "E", "G"],
+            "Basic": ["A", "C", "D", "E", "G", "F"],
             "Minor": ["Am", "Dm", "Em", "Bm"],
             "7th Chords": ["A7", "B7", "C7", "D7", "E7"]
         }
@@ -106,7 +106,7 @@ class GuitarChordApp:
         try:
             # self.display_time = float(self.tempo_slider.get())
             self.bpm = int(self.tempo_slider.get())  # Get BPM from tempo slider
-            self.display_time = 60 / self.bpm  # Calculate time interval per beat
+            self.display_time = 60 // self.bpm  # Calculate time interval per beat
         except ValueError:
             messagebox.showerror("Invalid Input", "Please enter a valid number for display time.")
             return
